@@ -1,0 +1,23 @@
+CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+--DROP DATABASE invitation;
+
+USE invitation;
+
+--DROP TABLE film;
+
+CREATE TABLE personne (
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  prenom VARCHAR(100) NOT NULL,
+  nom VARCHAR(100) NOT NULL,
+  age int (3),
+  date DATE,
+  status BOOLEAN,
+  type  ENUM ('membre','non membre'),
+  description TEXT(1000) NOT NULL,
+  salaire annuel DECIMAL(100) NOT NULL
+
+) ENGINE=InnoDB;
+
+
+
